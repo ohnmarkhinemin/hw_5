@@ -1,8 +1,13 @@
 ---
 title: "Untitled"
+author: 
 format: html
 editor: visual
 ---
+
+```{r}
+library(tidyverse)
+```
 
 ## Quarto
 
@@ -24,3 +29,10 @@ You can add options to executable code like this
 ```
 
 The `echo: false` option disables the printing of code (only output is displayed).
+
+```{r}
+mtcars |> 
+  ggplot(aes(mpg, wt)) + 
+  geom_point()
+  
+```
